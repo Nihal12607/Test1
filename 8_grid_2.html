@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>PRACTICE GRID</title>
+  <style>
+    * {
+      font-family: Arial;
+    }
+
+    .one,.two,.three{
+      box-shadow: 3px 3px 5px rgba(0, 0, 0,0.173);
+    }
+
+    .grid-1 {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      align-items: center;
+      column-gap: 15px;
+    }
+
+    .grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 20px;
+    }
+
+    .icon {
+      width: 100%;
+      border-radius: 50px;
+      margin-bottom: 20px;
+    }
+
+    .author {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .des {
+      font-size: 25px;
+    }
+
+    .button {
+      cursor: pointer;
+      font-size: 30px;
+      background-color: rgb(13, 111, 164);
+      border: none;
+      color: white;
+      border-radius: 8px;
+
+      padding-left: 35px;
+      padding-right: 35px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid">
+    <div class="one">
+      <div>
+        <img class="main" src="7_nested_layouts_technique_images/Capture-1.PNG">
+      </div>
+      <div>
+        <div>
+          <p class="author">oliver</p>
+        </div>
+        <div class="grid-1">
+          <div>
+            <img class="icon" src="7_nested_layouts_technique_images/Capture-1.PNG">
+          </div>
+          <div>
+            <p class="des">2 mutual friends</p>
+          </div>
+        </div>
+        <div>
+          <button class="button">
+            Add Friend
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="two">
+      <div>
+        <img class="main" src="7_nested_layouts_technique_images/Capture-2.PNG">
+      </div>
+      <div>
+        <div>
+          <p class="author">Mimi</p>
+        </div>
+        <div class="grid-1">
+          <div>
+            <img class="icon" src="7_nested_layouts_technique_images/Capture-2.PNG">
+          </div>
+          <div>
+            <p class="des">3 mutual friends</p>
+          </div>
+        </div>
+        <div>
+          <button class="button">
+            Add Friend
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="three">
+      <div>
+        <img class="main" src="7_nested_layouts_technique_images/Capture-3.PNG">
+      </div>
+      <div>
+        <div>
+          <p class="author">Rex</p>
+        </div>
+        <div class="grid-1">
+          <div>
+            <img class="icon" src="7_nested_layouts_technique_images/Capture-3.PNG">
+          </div>
+          <div>
+            <p class="des">4 mutual friends</p>
+          </div>
+        </div>
+        <div>
+          <button class="button">
+            Add Friend
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
